@@ -16,7 +16,7 @@ foreach my $data(1..6)
 	my($date,$name,$other)=split(',',$SEA[$_],3);
 	next if $date > $NOW_TIME;
 	$SEA[$_]="";
-	PushLog(2,0,"都市$nameは，産物が底を突き交易価値を失いました。");
+	PushLog(2,0,l("都市%1は，産物が底を突き交易価値を失いました。",$name));
 	}
 	WriteSea($data);
 }

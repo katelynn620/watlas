@@ -1,0 +1,931 @@
+# 商人物語システム 05-03-30 ＋ ワールドアトラスアイテムセット
+# Copyright (C) 2005 由來
+# This file is distributed under the same license as the PACKAGE package.
+# Neru Uzuki <neru.asobou@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Neru Uzuki <neru.asobou@gmail.com>\n"
+"Language-Team: Neru Uzuki <neru.asobou@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. ($DATA_DIR)
+#: watlas/admin.cgi:23
+msgid " ディレクトリ %1 のパーミッションを見直してください"
+msgstr " 請檢查目錄 %1 的權限"
+
+#: watlas/admin.cgi:20
+msgid "$DATA_DIR の設定不良，もしくは，$DATA_DIR ディレクトリが作成されていません"
+msgstr "未建立 $DATA_DIR 或 $DATA_DIR 目錄的設定錯誤"
+
+#: watlas/admin.cgi:21
+msgid "$SESSION_DIR $TEMP_DIR $LOG_DIR $BACKUP_DIR $SUBDATA_DIR 辺りの設定が異常です"
+msgstr "$SESSION_DIR $TEMP_DIR $LOG_DIR $BACKUP_DIR $SUBDATA_DIR 的設定有異常"
+
+#. ($HTML_TITLE)
+#: watlas/admin.cgi:89 watlas/admin.cgi:92
+msgid "%1 管理室"
+msgstr "%1 管理室"
+
+#. ($Q{sname})
+#: watlas/custom/new.cgi:104
+msgid "%1が新装開店しました。"
+msgstr ""
+
+#. ("<BIG>$TITLE[$Q{t}]</BIG>")
+#: watlas/custom/library.cgi:697
+msgid "%1については，以下の本が見つかりました。"
+msgstr "關於%1的內容，找到了以下的書籍。"
+
+#. (($STATE->{leader} ? $DT[$lid]->{name} : $BAL_NAME)
+#: watlas/custom/inc-town.cgi:133
+msgid "%1の暴政に断固ハンターイ！"
+msgstr "堅決反對%1的暴政！"
+
+#. (($subdata[13] + 0)
+#: watlas/custom/dock.cgi:46
+msgid "%1人"
+msgstr ""
+
+#. (($buf[5] + 0)
+#: watlas/custom/tradehouse.cgi:52
+msgid "%1本"
+msgstr ""
+
+#. (($subdata[12] + 0)
+#: watlas/custom/dock.cgi:45
+msgid "%1樽"
+msgstr ""
+
+#. (($subdata[11] + 0)
+#: watlas/custom/dock.cgi:44
+msgid "%1食"
+msgstr ""
+
+#: watlas/custom/inc-dock.cgi:34
+msgid "5個以上選択されています"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:25
+msgid "LogOut"
+msgstr "登出"
+
+#: watlas/custom/inc-menu.cgi:51
+msgid "wis"
+msgstr "密語"
+
+#. (($MAX_USER-$DTusercount)
+#: watlas/index.cgi:23
+msgid "【新規店舗オープン】<small>残り %1 名様</small>"
+msgstr "【開新店舖】<small>剩下 %1 個名額</small>"
+
+#: watlas/index.cgi:24
+msgid "【新規店舗オープン】<small>現在満員</small>"
+msgstr "【開新店舖】<small>名額已滿</small>"
+
+#: watlas/custom/new.cgi:13
+msgid "あなたはすでに店舗を持っています。"
+msgstr ""
+
+#: watlas/custom/new.cgi:14
+msgid "あなたは他の街ですでに店舗を持っています。"
+msgstr ""
+
+#: watlas/custom/new.cgi:15
+msgid "あなたは現在登録制限されています。"
+msgstr ""
+
+#: watlas/custom/inc-town.cgi:117
+msgid "うちのスライムまた負けちゃった・・・"
+msgstr "我的史萊姆輸了啊・・・"
+
+#: watlas/custom/stock.cgi:18 watlas/custom/stock.cgi:19
+msgid "お手伝い"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:22
+msgid "お掃除"
+msgstr "打掃"
+
+#: watlas/custom/stock.cgi:21
+msgid "お掃除へ"
+msgstr ""
+
+#: watlas/custom/inc-hometown.cgi:43
+msgid "きゃんきゃんっ"
+msgstr "鏘鏘"
+
+#: watlas/custom/inc-new.cgi:11
+msgid "このゲームは，ブラウザでプレイできる経営シミュレーションＲＰＧです。"
+msgstr "本遊戲為使用瀏覽器遊玩的經營模擬RPG。"
+
+#: watlas/custom/inc-admin-func.cgi:259
+msgid "この操作はメンテモードでしか行えません"
+msgstr ""
+
+#: watlas/custom/inc-hometown.cgi:48
+msgid "この街は警戒がぬるくてラッキー♪"
+msgstr "這條街沒什麼戒心真是太幸運了♪"
+
+#: watlas/custom/new.cgi:133
+msgid "そなたの<SPAN>パスワード</SPAN>は「<b>$Q{pass1}</b>」である。必ずメモするように。"
+msgstr ""
+
+#: watlas/custom/new.cgi:116
+msgid "そなたの出店にあたり，王国が結ぶ契約は以下の通りである。"
+msgstr ""
+
+#: watlas/custom/staff.cgi:17
+msgid "なお，素材をゲームから直接取り出して利用しないでください。"
+msgstr "請不要直接從遊戲中獲取素材並使用。"
+
+#: watlas/custom/inc-menu.cgi:140 watlas/custom/tradehouse.cgi:46
+msgid "なし"
+msgstr "無"
+
+#: watlas/custom/inc-new.cgi:8
+msgid "はじめに"
+msgstr "介紹"
+
+#: watlas/custom/inc-hometown.cgi:38
+msgid "はやくマイホームを建てないとなぁ・・・"
+msgstr "我必須快點蓋好我的家啊・・・"
+
+#: watlas/custom/inc-menu.cgi:137
+msgid "ほか"
+msgstr "其他"
+
+#: watlas/custom/inc-town.cgi:127
+msgid "ぽかぽかして気持ちええのぉ・・・"
+msgstr "感覺很溫暖呢..."
+
+#: watlas/custom/new.cgi:141
+msgid "また<SPAN>[図書館]</SPAN>に経営のヒントがありますので一通りご覧下さい。"
+msgstr ""
+
+#: watlas/custom/inc-town.cgi:134
+msgid "もっと市民の安全を考えろーっ"
+msgstr "應該多考慮市民的安全啊"
+
+#: watlas/custom/inc-hometown.cgi:39
+msgid "やっと結婚できたねっ"
+msgstr "終於可以結婚了呢"
+
+#. ($Q{name},$Q{sname})
+#: watlas/custom/new.cgi:115
+msgid "よくぞ参った<b>%1</b>よ。そなたの店「<b>%2</b>」の出店を認めよう。"
+msgstr ""
+
+#: watlas/custom/inc-hometown.cgi:34
+msgid "わーい わーい"
+msgstr "哇－ 哇－"
+
+#: watlas/custom/inc-new.cgi:30
+msgid "アイコン"
+msgstr "頭像"
+
+#: watlas/custom/inc-new.cgi:41
+msgid "アイコン一覧"
+msgstr "頭像一覽"
+
+#: watlas/custom/staff.cgi:27
+msgid "アイコン（アイテム）"
+msgstr ""
+
+#: watlas/custom/staff.cgi:29
+msgid "アイコン（ジョブ・道具）"
+msgstr ""
+
+#: watlas/custom/staff.cgi:31
+msgid "アイコン（種類・専門店）"
+msgstr ""
+
+#: watlas/custom/staff.cgi:33
+msgid "アイコン（追加）"
+msgstr "圖示（追加）"
+
+#: watlas/custom/dock.cgi:24 watlas/custom/tradehouse.cgi:13 watlas/custom/tradehouse.cgi:18
+msgid "アジア"
+msgstr ""
+
+#: watlas/custom/dock.cgi:24 watlas/custom/tradehouse.cgi:10 watlas/custom/tradehouse.cgi:18
+msgid "アフリカ"
+msgstr ""
+
+#: watlas/custom/dock.cgi:24 watlas/custom/tradehouse.cgi:12 watlas/custom/tradehouse.cgi:18
+msgid "インド"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:41 watlas/custom/inc-town.cgi:61
+msgid "ギルド"
+msgstr "商會"
+
+#: watlas/sindex-mob.html:11 watlas/sindex.html:40
+msgid "クッキーで保存"
+msgstr "保存cookie"
+
+#: watlas/custom/staff.cgi:16
+msgid "ゲームの各部分についての著作権は，それぞれ下記の方々に帰属します。"
+msgstr "遊戲各部分內容的著作權歸屬於，請參考以下內容"
+
+#: watlas/custom/library.cgi:681
+msgid "ゲームをプレイするのに必要な知識から，高度な情報まで"
+msgstr "這裡從遊戲遊玩的基礎知識到進階資訊都有"
+
+#: watlas/custom/new.cgi:144
+msgid "ゲームスタート"
+msgstr ""
+
+#: watlas/sindex.html:46
+msgid "スタッフロール"
+msgstr "工作人員名單"
+
+#: watlas/custom/new.cgi:140
+msgid "スタートしたら，まず<SPAN>[掲示板]</SPAN>であいさつをすると良いでしょう。"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:119
+msgid "トップ"
+msgstr "TOP"
+
+#: watlas/custom/dock.cgi:14 watlas/custom/inc-menu.cgi:45
+msgid "ドック"
+msgstr ""
+
+#: watlas/custom/dock.cgi:19
+msgid "ドックを利用するには，関係する職業に就く必要があります。"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:43 watlas/sindex-mob.html:10 watlas/sindex.html:39
+msgid "パスワード"
+msgstr "密碼"
+
+#: watlas/custom/inc-new.cgi:54
+msgid "パスワードは他人が推測できないようなものを。"
+msgstr "請使用他人無法猜到的密碼"
+
+#: watlas/custom/inc-new.cgi:44
+msgid "パスワードもう一度"
+msgstr "再輸入密碼"
+
+#: watlas/custom/staff.cgi:13
+msgid "パスワード漏れの危険があるので表示中止します。"
+msgstr "有暴露密碼的風險作業已中斷。"
+
+#: watlas/custom/dock.cgi:44
+msgid "パン"
+msgstr ""
+
+#. ($fname)
+#: watlas/_config.cgi:227
+msgid "ファイルが見つかりません - %1"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:119
+msgid "ホーム"
+msgstr "首頁"
+
+#: watlas/custom/staff.cgi:35
+msgid "マップ・キャラ"
+msgstr "地圖、角色設定"
+
+#: watlas/admin.cgi:138
+msgid "マニュアルを参照して正しく設定して下さい"
+msgstr "請參考使用手冊進行正確的設定"
+
+#: watlas/custom/dock.cgi:45
+msgid "ラム酒"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:31
+msgid "ランダム"
+msgstr "隨機"
+
+#: watlas/custom/new.cgi:145
+msgid "ログイン後に[♪]を押すとBGMを演奏することができます。"
+msgstr ""
+
+#: watlas/custom/inc-town.cgi:111
+msgid "一気にケリをつけようっ"
+msgstr "讓我們立即開戰吧"
+
+#: watlas/custom/inc-admin-func.cgi:6
+msgid "不正なリクエストです"
+msgstr ""
+
+#: watlas/custom/dock.cgi:24 watlas/custom/tradehouse.cgi:11 watlas/custom/tradehouse.cgi:18
+msgid "中近東"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:47
+msgid "交流"
+msgstr "交流"
+
+#: watlas/custom/tradehouse.cgi:34
+msgid "仕入値"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:44
+msgid "住宅地"
+msgstr "住宅區"
+
+#: watlas/custom/dock.cgi:81
+msgid "何も選択しないと船団を解体します。"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:30 watlas/custom/inc-town.cgi:39
+msgid "依頼所"
+msgstr "委託所"
+
+#: watlas/custom/stock.cgi:67
+msgid "保管倉庫"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:21 watlas/custom/stock.cgi:17
+msgid "倉庫"
+msgstr "倉庫"
+
+#: watlas/custom/inc-menu.cgi:43
+msgid "傭兵所"
+msgstr "傭兵所"
+
+#: watlas/custom/stock.cgi:20
+msgid "先にお掃除して，ごみを片付けましょう。"
+msgstr ""
+
+#: watlas/custom/inc-town.cgi:74
+msgid "兵士駐屯所"
+msgstr "軍營"
+
+#: watlas/custom/inc-new.cgi:47
+msgid "出店キーワード"
+msgstr "開店密碼"
+
+#: watlas/custom/new.cgi:16
+msgid "出店キーワードが正しくありません。"
+msgstr ""
+
+#: watlas/custom/stock.cgi:41
+msgid "出港中"
+msgstr ""
+
+#: watlas/custom/inc-dock.cgi:5
+msgid "出港中の船団は編成変更できません。"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:27 watlas/custom/inc-new.cgi:28
+msgid "半角全角OK"
+msgstr "全形半形皆可"
+
+#: watlas/custom/inc-new.cgi:43
+msgid "半角英数のみ"
+msgstr "只能輸入半形英數字"
+
+#: watlas/custom/staff.cgi:25
+msgid "原作"
+msgstr "原作"
+
+#: watlas/custom/inc-new.cgi:12
+msgid "参加する前に，図書館でルールやプレイ方法をよく読んでください。"
+msgstr "註冊前請先閱讀圖書館裡面的規則以及遊玩方法。"
+
+#: watlas/custom/inc-town.cgi:110
+msgid "反乱だ！加勢に行くぞっ"
+msgstr "是叛亂啊！ 我來幫忙"
+
+#: watlas/custom/inc-menu.cgi:23
+msgid "収支"
+msgstr "收支"
+
+#: watlas/custom/inc-menu.cgi:27
+msgid "取引"
+msgstr "交易"
+
+#: watlas/custom/inc-new.cgi:27 watlas/sindex-mob.html:9 watlas/sindex.html:38
+msgid "名前"
+msgstr "名字"
+
+#: watlas/custom/new.cgi:50
+msgid "名前(全角6文字)・店名(全角10文字)・パスワード(8文字)の文字数が多いです。"
+msgstr ""
+
+#: watlas/custom/new.cgi:54
+msgid "名前とパスワードは同じにしないでください。"
+msgstr ""
+
+#: watlas/custom/new.cgi:32
+msgid "名前・店名・パスワードに使用できない"
+msgstr ""
+
+#: watlas/custom/new.cgi:37
+msgid "名前・店名・パスワードを入力してください。"
+msgstr ""
+
+#: watlas/custom/stock.cgi:140 watlas/custom/stock.cgi:81
+msgid "名称"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:67
+msgid "品薄"
+msgstr ""
+
+#: watlas/sindex.html:45
+msgid "商人物語"
+msgstr ""
+
+#: watlas/sindex.html:46
+msgid "商人物語 配布元"
+msgstr "商人物語 發佈站"
+
+#: watlas/custom/stock.cgi:19
+msgid "商品がごみの中にうずもれていて，見つけられません。"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:29
+msgid "商店通り"
+msgstr "商店街"
+
+#: watlas/custom/stock.cgi:9
+msgid "商店通りへ"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:32 watlas/custom/tradehouse.cgi:20
+msgid "商館"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:15 watlas/custom/inc-menu.cgi:37 watlas/custom/inc-town.cgi:83 watlas/custom/library.cgi:661
+msgid "図書館"
+msgstr "圖書館"
+
+#: watlas/custom/inc-town.cgi:122
+msgid "図書館の情報は重要だよっ"
+msgstr "圖書館的情報很重要喔"
+
+#: watlas/custom/library.cgi:662 watlas/custom/library.cgi:681 watlas/custom/library.cgi:697
+msgid "図書館員"
+msgstr "圖書館員"
+
+#: watlas/custom/stock.cgi:73
+msgid "在庫"
+msgstr ""
+
+#: watlas/custom/stock.cgi:120
+msgid "在庫がありません"
+msgstr ""
+
+#: watlas/custom/stock.cgi:144
+msgid "売上数<small>/前期</small>"
+msgstr ""
+
+#: watlas/custom/inc-town.cgi:109
+msgid "大変だ・・・。援軍を呼ばないと！"
+msgstr "糟了・・・。要趕快叫援軍來啊！"
+
+#: watlas/custom/inc-menu.cgi:49
+msgid "宅配便"
+msgstr "宅急便"
+
+#: watlas/custom/tradehouse.cgi:48
+msgid "定価"
+msgstr ""
+
+#. (int($buf[4] / $ITEM[$buf[3]]->{price} * 100)
+#: watlas/custom/tradehouse.cgi:50
+msgid "定価の%1%"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:31
+msgid "宮殿"
+msgstr "皇宮"
+
+#: watlas/custom/inc-menu.cgi:28 watlas/custom/inc-town.cgi:48
+msgid "市場"
+msgstr "市場"
+
+#: watlas/custom/stock.cgi:10
+msgid "市場へ"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:70
+msgid "底無"
+msgstr ""
+
+#: watlas/sindex-mob.html:12 watlas/sindex.html:41
+msgid "店へ入る"
+msgstr "進入店鋪"
+
+#: watlas/custom/inc-menu.cgi:20
+msgid "店内"
+msgstr "店鋪"
+
+#: watlas/custom/stock.cgi:11
+msgid "店内に戻る"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:28
+msgid "店名"
+msgstr "店名"
+
+#: watlas/custom/new.cgi:45
+msgid "店名の文字数が少ないです。"
+msgstr ""
+
+#: watlas/custom/inc-hometown.cgi:43
+msgid "待って～っ"
+msgstr "等等啊～"
+
+#: watlas/custom/inc-menu.cgi:34
+msgid "情報"
+msgstr "情報"
+
+#: watlas/custom/inc-palace.cgi:12
+msgid "我が国の民には，その日のパンも食べられない子どもがおるのじゃ。"
+msgstr ""
+
+#: watlas/custom/inc-palace.cgi:13
+msgid "我が国の民を元気付けるため，ラム酒を振る舞いたいと思っておる。"
+msgstr ""
+
+#: watlas/custom/new.cgi:134
+msgid "我が王国は，陸の領土にては小さき国。しかし，海の覇権なら，どの国にも負けぬ。"
+msgstr ""
+
+#: watlas/custom/inc-dock.cgi:44
+msgid "所持数を超えて船が選択されています"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:24
+msgid "手続"
+msgstr "手續"
+
+#: watlas/custom/inc-menu.cgi:50 watlas/custom/inc-town.cgi:92
+msgid "掲示板"
+msgstr "留言板"
+
+#: watlas/custom/inc-town.cgi:123
+msgid "掲示板のチェックも大切だね。ふむふむ・・・"
+msgstr "嗯嗯~ 觀看留言板很重要呢。"
+
+#: watlas/custom/stock.cgi:84
+msgid "数量"
+msgstr ""
+
+#: watlas/custom/stock.cgi:143
+msgid "数量<small>/最大</small>"
+msgstr ""
+
+#: watlas/custom/new.cgi:33
+msgid "文字が含まれています。"
+msgstr ""
+
+#: watlas/custom/dock.cgi:24 watlas/custom/tradehouse.cgi:14 watlas/custom/tradehouse.cgi:18
+msgid "新大陸"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:14 watlas/custom/inc-menu.cgi:36 watlas/custom/stock.cgi:8
+msgid "新聞"
+msgstr "新聞"
+
+#. (($MAX_USER-$DTusercount)
+#: watlas/custom/inc-new.cgi:18
+msgid "新規店舗オープン：残り%1名様"
+msgstr "開新店舖：剩下%1個名額"
+
+#: watlas/custom/new.cgi:12
+msgid "新規店舗登録権限がありません。"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:39
+msgid "施設"
+msgstr "設施"
+
+#. ($Q{name})
+#: watlas/custom/new.cgi:59
+msgid "既に存在する名前です。-> %1"
+msgstr ""
+
+#. ($Q{sname})
+#: watlas/custom/new.cgi:60
+msgid "既に存在する店名です。-> %1"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:68
+msgid "普通"
+msgstr ""
+
+#: watlas/custom/stock.cgi:84
+msgid "最大"
+msgstr ""
+
+#: watlas/custom/dock.cgi:80
+msgid "最大 5つまで選択できます。"
+msgstr ""
+
+#: watlas/custom/inc-palace.cgi:11
+msgid "最近，王室の財宝を狙う盗賊が現れているようじゃ。"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:23
+msgid "未踏破領域"
+msgstr ""
+
+#: watlas/sindex-mob.html:16 watlas/sindex.html:46
+msgid "本サイトの管理者"
+msgstr "本站管理員"
+
+#: watlas/custom/stock.cgi:129
+msgid "本昨売"
+msgstr ""
+
+#: watlas/custom/new.cgi:5 watlas/custom/staff.cgi:15
+msgid "案内人"
+msgstr "嚮導"
+
+#: watlas/custom/stock.cgi:62
+msgid "棚"
+msgstr ""
+
+#: watlas/custom/stock.cgi:127 watlas/custom/stock.cgi:71
+msgid "標準"
+msgstr ""
+
+#: watlas/custom/stock.cgi:141 watlas/custom/stock.cgi:82
+msgid "標準価格"
+msgstr ""
+
+#. (GetTime2FormatTime($nextday-$TZ_JST+$DATE_REVISE_TIME)
+#: watlas/custom/inc-menu.cgi:101 watlas/custom/inc-menu.cgi:120
+msgid "次回決算 %1 まであと%2"
+msgstr "下次決算 %1 還有%2"
+
+#: watlas/custom/dock.cgi:24 watlas/custom/tradehouse.cgi:18 watlas/custom/tradehouse.cgi:9
+msgid "欧州"
+msgstr ""
+
+#: watlas/custom/dock.cgi:46
+msgid "水夫"
+msgstr ""
+
+#: watlas/custom/new.cgi:124
+msgid "汝，<SPAN>交易</SPAN>を志すならば，世界の商品をすべて王国に集めるべし。"
+msgstr ""
+
+#: watlas/custom/new.cgi:121
+msgid "汝，<SPAN>冒険</SPAN>を志すならば，世界の発見を王国に報告せよ。<br> 発見した事実は他言無用とすべし。"
+msgstr ""
+
+#: watlas/custom/new.cgi:127
+msgid "汝，<SPAN>海賊</SPAN>を志すならば，他国の商船を攻撃せよ。<br> ただし，王国の名を名乗ってはならぬ。"
+msgstr ""
+
+#: watlas/custom/new.cgi:130
+msgid "汝，<SPAN>海軍</SPAN>を志すならば，他国の海賊を掃討せよ。<br> 海賊の所持品は自由に処分してよい。"
+msgstr ""
+
+#: watlas/custom/new.cgi:118
+msgid "汝，<SPAN>造船</SPAN>を志すならば，他国には作れぬ船と大砲を作るべし。"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:74
+msgid "活動中"
+msgstr "活動中"
+
+#: watlas/custom/dock.cgi:38
+msgid "海域適性"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:24
+msgid "海賊出現率"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:25
+msgid "海軍偵察率"
+msgstr ""
+
+#: watlas/custom/stock.cgi:130 watlas/custom/stock.cgi:145 watlas/custom/stock.cgi:74 watlas/custom/stock.cgi:85
+msgid "熟練"
+msgstr "熟練"
+
+#: watlas/custom/new.cgi:135
+msgid "王国の栄光のため，汝の活躍あらんことを祈る。"
+msgstr ""
+
+#: watlas/custom/inc-palace.cgi:10 watlas/custom/inc-palace.cgi:9
+msgid "王室所有の船が台風で破損してしまい，修復のための材料が必要じゃ。"
+msgstr ""
+
+#: watlas/custom/new.cgi:6
+msgid "王様"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:35
+msgid "産出量"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:33
+msgid "産物"
+msgstr ""
+
+#: watlas/custom/new.cgi:157
+msgid "申し訳ありませんが，現在満員となっております。<BR>空きが出るのをお待ちください。"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:36
+msgid "画像"
+msgstr "頭像"
+
+#: watlas/custom/tradehouse.cgi:32
+msgid "発見者"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:50
+msgid "登録"
+msgstr "註冊"
+
+#: watlas/custom/inc-new.cgi:20
+msgid "登録は<b>１人１店舗</b>のみ"
+msgstr "<b>一人</b>只能註冊<b>一個店鋪</b>"
+
+#: watlas/custom/inc-hometown.cgi:47
+msgid "盗っ人め・・・待て！"
+msgstr "小偷…別跑啊！"
+
+#: watlas/custom/stock.cgi:132
+msgid "相場"
+msgstr ""
+
+#: watlas/custom/new.cgi:41
+msgid "確認パスワードが違っています。"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:42 watlas/custom/inc-town.cgi:26
+msgid "競技場"
+msgstr "競技場"
+
+#: watlas/custom/dock.cgi:9
+msgid "第一船団"
+msgstr ""
+
+#: watlas/custom/dock.cgi:11
+msgid "第三船団"
+msgstr ""
+
+#: watlas/custom/dock.cgi:10
+msgid "第二船団"
+msgstr ""
+
+#: watlas/custom/dock.cgi:12
+msgid "第四船団"
+msgstr ""
+
+#: watlas/admin.cgi:135
+msgid "管理メニュー"
+msgstr "管理選單"
+
+#: watlas/admin.cgi:35
+msgid "管理メニューへ"
+msgstr "進入管理選單"
+
+#: watlas/admin.cgi:140 watlas/admin.cgi:60
+msgid "管理メニューへ戻る"
+msgstr "回到管理選單"
+
+#: watlas/admin.cgi:34
+msgid "管理者パスワード"
+msgstr "管理員密碼"
+
+#: watlas/admin.cgi:17
+msgid "管理者パスワードが設定されていません"
+msgstr "沒有設定管理員密碼"
+
+#: watlas/admin.cgi:18
+msgid "管理者メールアドレスが設定されていません"
+msgstr "沒有設定管理員信箱"
+
+#: watlas/custom/stock.cgi:128 watlas/custom/stock.cgi:72
+msgid "維持"
+msgstr "維護"
+
+#: watlas/custom/stock.cgi:142 watlas/custom/stock.cgi:83
+msgid "維持費"
+msgstr ""
+
+#: watlas/custom/dock.cgi:31
+msgid "編成"
+msgstr ""
+
+#: watlas/custom/inc-menu.cgi:19
+msgid "自店"
+msgstr "自店"
+
+#: watlas/custom/tradehouse.cgi:36
+msgid "航路"
+msgstr ""
+
+#: watlas/custom/dock.cgi:69
+msgid "船を持っていないため，船団を編成できません。"
+msgstr ""
+
+#: watlas/custom/dock.cgi:50
+msgid "船団の編成"
+msgstr ""
+
+#: watlas/custom/dock.cgi:83
+msgid "船団を編成する"
+msgstr ""
+
+#: watlas/custom/inc-new.cgi:53
+msgid "荒らしと疑われるような名前は避けましょう。"
+msgstr "避免使用可能被視為網路小白的名稱。"
+
+#: watlas/admin.cgi:19
+msgid "街コードが設定されていません"
+msgstr "沒有設定街道代碼"
+
+#: watlas/custom/inc-menu.cgi:12
+msgid "街案内"
+msgstr "街道"
+
+#: watlas/custom/staff.cgi:23
+msgid "製作・著作"
+msgstr "開發、著作權"
+
+#: watlas/custom/tradehouse.cgi:69
+msgid "豊富"
+msgstr ""
+
+#: watlas/custom/stock.cgi:108
+msgid "販売倉庫"
+msgstr ""
+
+#: watlas/custom/stock.cgi:147
+msgid "販売相場"
+msgstr ""
+
+#. ($DT[0]->{shopname})
+#: watlas/custom/inc-town.cgi:128
+msgid "買い物はやっぱり%1よねっ"
+msgstr "要買東西還是得去%1呢"
+
+#: watlas/custom/inc-menu.cgi:48
+msgid "郵便局"
+msgstr "郵局"
+
+#. ($name)
+#: watlas/custom/inc-atlas.cgi:19
+msgid "都市%1は，産物が底を突き交易価値を失いました。"
+msgstr ""
+
+#: watlas/custom/tradehouse.cgi:31
+msgid "都市名"
+msgstr ""
+
+#: watlas/custom/staff.cgi:14
+msgid "開発スタッフロール"
+msgstr "開發工作人員名單"
+
+#: watlas/custom/stock.cgi:131 watlas/custom/stock.cgi:146
+msgid "陳列"
+msgstr ""
+
+#: watlas/custom/stock.cgi:133
+msgid "需給"
+msgstr ""
+
+#: watlas/custom/stock.cgi:148
+msgid "需要供給バランス"
+msgstr ""
+
+#: watlas/custom/staff.cgi:37
+msgid "音楽"
+msgstr "音樂"
+
+#: watlas/custom/library.cgi:682
+msgid "項目ごとに整理されています。よく読んでおくことをおすすめします。"
+msgstr "都有按照項目整理好了。我們建議您仔細閱讀。"
+
+#: watlas/custom/library.cgi:698
+msgid "項目一覧に戻る"
+msgstr "回到項目列表"
+
+#: watlas/custom/inc-town.cgi:111
+msgid "領主を倒せっ"
+msgstr "將領主打倒"
+
+#: watlas/custom/inc-menu.cgi:40
+msgid "領主邸"
+msgstr "領主邸"
+
+#: watlas/custom/inc-menu.cgi:13 watlas/custom/inc-menu.cgi:35
+msgid "風景"
+msgstr "風景"
+
+#: watlas/custom/inc-town.cgi:118
+msgid "食事の材料買いに行かなくっちゃ。"
+msgstr "我得去買做飯的材料了。"

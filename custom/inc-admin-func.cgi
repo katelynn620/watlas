@@ -3,7 +3,7 @@ use utf8;
 # ワールドアトラス版（欧州海域の初期設定）
 
 my $functionname=$Q{mode};
-OutError("不正なリクエストです") if !defined(&$functionname);
+OutError(l("不正なリクエストです")) if !defined(&$functionname);
 &$functionname;
 
 sub menteon
@@ -256,7 +256,7 @@ sub CheckLock
 		}
 		else
 		{
-		OutError('この操作はメンテモードでしか行えません','noerror');
+		OutError(l("この操作はメンテモードでしか行えません"),'noerror');
 		}
 }
 

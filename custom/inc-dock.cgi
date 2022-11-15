@@ -2,7 +2,7 @@ use utf8;
 # ドック編成処理 2004/02/28 由來
 # ワールドアトラス版
 
-OutError("出港中の船団は編成変更できません。") if -e (GetPath($SUBDATA_DIR,$DT->{id}."-exp".$Q{ship}));
+OutError(l("出港中の船団は編成変更できません。") if -e (GetPath($SUBDATA_DIR,$DT->{id}."-exp").$Q{ship}));
 
 # 設定
 my @SHIP=(
@@ -31,7 +31,7 @@ foreach my $num(5..11)
 		{
 		my $data=$num."_".$cnt;
 		next if !$Q{$data};
-		OutError("5個以上選択されています") if $scr > 4;
+		OutError(l("5個以上選択されています")) if $scr > 4;
 		$subdata[$scr]=$num;
 		$scr++;
 		$DT->{item}[$num-1]--;
@@ -41,7 +41,7 @@ foreach my $num(5..11)
 			$subdata[$i+5]+=$buf[$i];
 			}
 		}
-	OutError("所持数を超えて船が選択されています") if $DT->{item}[$num-1] < 0;
+	OutError(l("所持数を超えて船が選択されています")) if $DT->{item}[$num-1] < 0;
 	}
 
 if (!$scr)

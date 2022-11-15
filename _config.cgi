@@ -77,7 +77,7 @@ $BAL_JOB	='海賊王';			# 反乱ＮＰＣの職業
 #-------------------------------
 
 @term=(
-	'\\',			#前につける通貨単位
+	'￥',			#前につける通貨単位
 	'',			#後につける通貨単位
 	'円',			#日本語表記される場合の通貨単位（順位などで使う）
 	'サラ金生活',		#資金マイナス時（順位で使う）
@@ -224,7 +224,7 @@ sub RequireFile
 	my $customfile="$CUSTOM_DIR/$_[0]";
 	require $customfile,return if -e $customfile;
 	my $fname="$INCLUDE_DIR/$_[0]";
-	OutError('ファイルが見つかりません - '.$fname) unless -e $fname;
+	OutError(l('ファイルが見つかりません - %1',$fname)) unless -e $fname;
 	require $fname;
 }
 1;
