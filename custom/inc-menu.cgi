@@ -1,3 +1,4 @@
+use utf8;
 # メニュー設定ファイル 2005/03/30 由來
 # ワールドアトラス版
 
@@ -143,7 +144,7 @@ return $logmemb
 sub WisRead
 {
 	my ($file)=@_;
-	open(IN,$file) or return;
+	open(IN,"<:encoding(UTF-8)",$file) or return;
 	read(IN,my $buf,-s $file);
 	close(IN);
 	unlink $file;

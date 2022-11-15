@@ -1,3 +1,4 @@
+use utf8;
 # ドック 2004/02/28 由來
 # ワールドアトラス版
 
@@ -92,7 +93,7 @@ sub ReadShipSub
 {
 	my($file)=@_;
 	my $filename=GetPath($SUBDATA_DIR,$file);
-	open(IN,$filename) or return;
+	open(IN,"<:encoding(UTF-8)",$filename) or return;
 	read(IN,my $buf,-s $filename);
 	close(IN);
 	my @buf=split(',',$buf);

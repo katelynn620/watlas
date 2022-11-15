@@ -1,7 +1,13 @@
 #!/usr/bin/perl
 # 管理メイン 2005/03/30 由來
+use utf8;
+use Encode qw(decode_utf8);
+binmode(STDOUT, ':encoding(utf8)');
 
 require './_config.cgi';
+# Add I18N
+RequireFile('inc-locale.cgi');
+
 GetQuery();
 RequireFile("inc-makeitem.cgi") if $Q{key} eq "makeitem";
 
@@ -63,7 +69,7 @@ sub OutHeader
 {
 print "Cache-Control: no-cache, must-revalidate\n";
 print "Pragma: no-cache\n";
-print "Content-type: text/html; charset=Shift_JIS\n\n";
+print "Content-type: text/html; charset=utf-8\n\n";
 print <<STR;
 <HTML><HEAD>
 <Style Type="text/css">
@@ -125,7 +131,7 @@ sub OutError
 {
 	print "Cache-Control: no-cache, must-revalidate\n";
 	print "Pragma: no-cache\n";
-	print "Content-type: text/html; charset=Shift_JIS\n\n";
+	print "Content-type: text/html; charset=utf-8\n\n";
 	print "<HTML><HEAD><TITLE>管理メニュー</TITLE></HEAD>";
 	print "<BODY>";
 	print $_[0]."<br>";

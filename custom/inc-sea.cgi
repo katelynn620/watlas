@@ -1,3 +1,4 @@
+use utf8;
 # 海域データアクセス 2004/02/28 由來
 # ワールドアトラス仕様
 
@@ -6,7 +7,7 @@ sub ReadSea
 	my($filenum)=@_;
 	undef @SEA;
 	$Civ=$Pir=$Pro=$Townnum=0;
-	open(IN,GetPath("sea$filenum")) or return;
+	open(IN,"<:encoding(UTF-8)",GetPath("sea$filenum")) or return;
 	@SEA=<IN>;
 	close(IN);
 	($Civ,$Pir,$Pro)=split(',',$SEA[0]);
@@ -27,7 +28,7 @@ sub ReadSeaSub
 {
 	my($file)=@_;
 	my $filename=GetPath($SUBDATA_DIR,$file);
-	open(IN,$filename);
+	open(IN,"<:encoding(UTF-8)",$filename);
 	read(IN,my $buf,-s $filename);
 	close(IN);
 	my @buf=split(',',$buf);

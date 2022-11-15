@@ -1,5 +1,4 @@
 {
-
     package I18N;
     use FindBin qw($Bin);
     use parent 'Locale::Maketext';

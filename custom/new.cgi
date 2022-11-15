@@ -1,9 +1,10 @@
+use utf8;
 # 新規開店 2004/02/28 由來
 # ワールドアトラス用
 
 $image[0]=GetTagImgKao("案内人","guide");
 $image[1]=GetTagImgKao("王様","king",'align="left" ');
-require $JCODE_FILE;
+# require $JCODE_FILE;
 DataRead();
 
 if($Q{admin} ne $MASTER_PASSWORD)
@@ -18,8 +19,8 @@ if($Q{admin} ne $MASTER_PASSWORD)
 
 if($Q{sname}.$Q{name}.$Q{pass1}.$Q{pass2})
 {
-	$Q{name}=jcode::sjis($Q{name},$CHAR_SHIFT_JIS&&'sjis');
-	$Q{sname}=jcode::sjis($Q{sname},$CHAR_SHIFT_JIS&&'sjis');
+	# $Q{name}=jcode::sjis($Q{name},$CHAR_SHIFT_JIS&&'sjis');
+	# $Q{sname}=jcode::sjis($Q{sname},$CHAR_SHIFT_JIS&&'sjis');
 
 	if(($Q{sname}.$Q{name}.$Q{pass1}.$Q{pass2}) =~ /([,:;\t\r\n<>&])/
 	|| ($Q{pass1}.$Q{pass2}) =~ /([^A-Za-z0-9_\-])/  #.$Q{name}を削除
@@ -163,7 +164,7 @@ sub GetDoubleIP
 	{
 	my $datafile='../'.$pg.'/data/user.cgi';
 	my($ip)=@_;
-	open(IN,$datafile) or return();
+	open(IN,"<:encoding(UTF-8)",$datafile) or return();
 	my @data=<IN>;
 	close(IN);
 	my @list=map{(split(/\t/,$_))[4]}@data;
