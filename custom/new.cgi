@@ -109,7 +109,7 @@ if($Q{sname}.$Q{name}.$Q{pass1}.$Q{pass2})
 	UnLock();
 
 	$disp=<<STR;
-${\l('')}街に新しいお店が誕生しました。<br><br>
+${\l('街に新しいお店が誕生しました。')}<br><br>
 <TABLE cellpadding="26" width="570"><tr>
 <TD style="background-repeat : repeat-x;background-image : url($IMAGE_URL/palace.png);" valign="top"><br><br>
 $image[1]${\l('よくぞ参った<b>%1</b>よ。そなたの店「<b>%2</b>」の出店を認めよう。',$Q{name},$Q{sname})}<br>
@@ -130,7 +130,7 @@ ${\l('汝，<SPAN>海賊</SPAN>を志すならば，他国の商船を攻撃せ�
 ${\l('汝，<SPAN>海軍</SPAN>を志すならば，他国の海賊を掃討せよ。<br> 海賊の所持品は自由に処分してよい。')}
 </li>
 </ul>
-${\l('そなたの<SPAN>パスワード</SPAN>は「<b>$Q{pass1}</b>」である。必ずメモするように。')}<br>
+${\l('そなたの<SPAN>パスワード</SPAN>は「<b>%1</b>」である。必ずメモするように。',$Q{pass1})}<br>
 ${\l('我が王国は，陸の領土にては小さき国。しかし，海の覇権なら，どの国にも負けぬ。')}<br>
 ${\l('王国の栄光のため，汝の活躍あらんことを祈る。')}
 $TRE$TBE
@@ -154,7 +154,7 @@ OutSkin();
 
 sub checkMaxUser
 {
-	OutError($TB.$TR.$TD.$image[0].$TD.l('申し訳ありませんが，現在満員となっております。<BR>空きが出るのをお待ちください。').$TRE.$TBE)
+	OutError($TB.$TR.$TD.$image[0].$TD.l('申し訳ありませんが，現在満員となっております。')."<BR>".l('空きが出るのをお待ちください。').$TRE.$TBE)
 		if $DTusercount>=$MAX_USER;
 }
 
