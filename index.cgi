@@ -44,7 +44,8 @@ exit;
 
 sub GetCookie
 {
-	foreach(split(/\s*;\s*/,$ENV{HTTP_COOKIE}))
+	$cookiebundle = decode_utf8($ENV{HTTP_COOKIE});
+	foreach(split(/\s*;\s*/,$cookiebundle))
 	{
 		@_=split(/=/);
 		$COOKIE{$_[0]}=$_[1];
