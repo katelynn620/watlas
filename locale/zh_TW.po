@@ -186,7 +186,7 @@ msgstr "這條街沒什麼戒心真是太幸運了♪"
 #. ($Q{pass1})
 #: watlas/custom/new.cgi:133
 msgid "そなたの<SPAN>パスワード</SPAN>は「<b>%1</b>」である。必ずメモするように。"
-msgstr "您的<SPAN>密碼</SPAN>是「」<b>%1</b>。請一定要記下來。"
+msgstr "您的<SPAN>密碼</SPAN>是「<b>%1</b>」。請一定要記下來。"
 
 #: watlas/custom/new.cgi:116
 msgid "そなたの出店にあたり，王国が結ぶ契約は以下の通りである。"

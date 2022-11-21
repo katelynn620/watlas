@@ -2133,7 +2133,7 @@
 	base	5/10
 	plus	-1h
 	pop	32h
-	scale	隻
+	scale	艘
 	point	2h
 @@ITEM
 	no		6
@@ -2146,7 +2146,7 @@
 	base	5/10
 	plus	-1h
 	pop	72h
-	scale	隻
+	scale	艘
 	point	4h
 @@ITEM
 	no		7
@@ -2159,7 +2159,7 @@
 	base	5/10
 	plus	-1h
 	pop	108h
-	scale	隻
+	scale	艘
 	point	6h
 @@ITEM
 	no		8
@@ -2172,7 +2172,7 @@
 	base	5/10
 	plus	-1h
 	pop	150h
-	scale	隻
+	scale	艘
 	point	8h
 @@ITEM
 	no		9
@@ -2185,7 +2185,7 @@
 	base	5/10
 	plus	-1h
 	pop	300h
-	scale	隻
+	scale	艘
 	point	16h
 @@ITEM
 	no		10
@@ -2198,7 +2198,7 @@
 	base	5/10
 	plus	-1h
 	pop	600h
-	scale	隻
+	scale	艘
 	point	50h
 @@ITEM
 	no		11
@@ -2211,7 +2211,7 @@
 	base	5/10
 	plus	-1h
 	pop	900h
-	scale	隻
+	scale	艘
 	point	80h
 
 @@ITEM
@@ -2406,12 +2406,12 @@
 	limit	1/1
 	pop	0
 	plus	1d
-	scale	キット
+	scale	組
 	flag	noshowcase|norequest
 	@@use
 		time	1h
 		scale	回
-		action	作業する
+		action	施工
 		price	10000
 		name	將展示架改為1個
 		info	將展示架改為1個
@@ -2518,7 +2518,7 @@
 	limit	1/1
 	pop	0
 	plus	4h
-	scale	冊
+	scale	本
 	flag	noshowcase
 	@@USE
 		time	20m
@@ -2703,7 +2703,7 @@
 	limit	1/0.5
 	pop	1d
 	plus	30m
-	scale	匹
+	scale	隻
 	flag	noshowcase|onlysend|human
 
 @@ITEM
@@ -2717,7 +2717,7 @@
 	limit	1/1
 	pop	0
 	plus	1d
-	scale	冊
+	scale	本
 	@@use
 		time	10h
 		exp	20%
@@ -2833,7 +2833,7 @@ return 0;
 sub jobport
 {
 	$DT->{job}=$USE->{param4};
-	WriteLog(3,0,$DT->{shopname}.'のジョブが「'.$main::JOBTYPE{$USE->{param4}}.'」になりました。');
+	WriteLog(3,0,$DT->{shopname}.'轉職成「'.$main::JOBTYPE{$USE->{param4}}.'」了。');
 	main::RequireFile('inc-sea.cgi');
 
 	my $ret;
@@ -2998,7 +2998,7 @@ sub meetexp
 	AddItem(@@ITEMNO "水手",$seaman);
 	$ret.=qq|<IMG width="112" height="150" align="left" SRC="$main::IMAGE_URL/map/ship1.png">|;
 	$ret.=main::GetTagImgKao('提督','exp','align="left" ')."<SPAN>提督</SPAN>：哦，我們剛剛抵達。<br>";
-	$ret.="不只遇到颱風還遭到海盜的襲擊，<br>水手共$seaman人的平安無事。<br>";
+	$ret.="不只遇到颱風還遭到海盜的襲擊，<br>水手共 $seaman 人平安無事歸來。<br>";
 	if ($subdata[3])
 		{
 		$ret.="在這次航行中，我們發現了一些罕見的事物。<br>";
@@ -3019,7 +3019,7 @@ sub meetexp
 		{
 		$ret.="在這次航行中，並沒有找到任何新的陸地。<br>";
 		}
-	$ret.="報告到此結束。讓我們休息一會兒直到開始下一次航海。";
+	$ret.="報告到此結束。直到開始下一次航海前讓我們休息一會兒吧。";
 	$ret.="</tr></table>";
 	return $ret;
 }
@@ -3324,7 +3324,7 @@ sub meetrtp
 	AddItem(@@ITEMNO "水手",$seaman);
 	$ret.=qq|<IMG width="112" height="150" align="left" SRC="$main::IMAGE_URL/map/ship1.png">|;
 	$ret.=main::GetTagImgKao('提督','rtp','align="left" ')."<SPAN>提督</SPAN>：哦，我們剛剛抵達。<br>";
-	$ret.="途中不只遇到颱風還遭到海盜的襲擊，<br>水手共$seaman人平安無事。<br>";
+	$ret.="途中不只遇到颱風還遭到海盜的襲擊，<br>水手共 $seaman 人平安無事歸來。<br>";
 	$ret.="本次的貿易，從都市「$subdata[2]」，<br>購買了";
 	$ret.=main::GetTagImgItemType($subdata[3]).$ITEM[$subdata[3]]->{name}." ";
 	$ret.=$subdata[4].$ITEM[$subdata[3]]->{scale}."。<br>";
@@ -3456,8 +3456,8 @@ sub meetpp
 
 	if ($main::NOW_TIME < $subdata[0])
 		{
-		$ret.="港に出てみたが，まだ艦隊が帰ってくる気配はないようだ。<br>";
-		$ret.="もう少し気長に待ってみよう。</tr></table>";
+		$ret.="去了港口，但似乎還沒有艦隊返回的跡象。<br>";
+		$ret.="還是晚點再來吧</tr></table>";
 		return $ret;
 		}
 	main::DeleteSeaSub("$DT->{id}-exp$itemno");
@@ -3482,7 +3482,7 @@ sub meetpp
 	AddItem(@@ITEMNO "水手",$seaman);
 	$ret.=qq|<IMG width="112" height="150" align="left" SRC="$main::IMAGE_URL/map/ship1.png">|;
 	$ret.=main::GetTagImgKao('提督','pro','align="left" ')."<SPAN>提督</SPAN>：哦，我們剛剛抵達。<br>";
-	$ret.="途中不只遇到颱風還遭到海盜的襲擊，<br>水手共$seaman人平安無事。<br>";
+	$ret.="途中不只遇到颱風還遭到海盜的襲擊，<br>水手共 $seaman 人平安無事歸來。<br>";
 
 	if ($subdata[3])
 		{
@@ -3520,7 +3520,7 @@ sub meetpp
 	AddItem(@@ITEMNO "水手",$seaman);
 	$ret.=qq|<IMG width="112" height="150" align="left" SRC="$main::IMAGE_URL/map/ship1.png">|;
 	$ret.=main::GetTagImgKao('提督','pir','align="left" ')."<SPAN>提督</SPAN>：嘿，我們回來啦。<br>";
-	$ret.="途中不只遇到颱風還遭到海盜的襲擊，<br>水手共$seaman人平安無事。<br>";
+	$ret.="途中不只遇到颱風還遭到海盜的襲擊，<br>水手共 $seaman 人平安無事歸來。<br>";
 
 	if ($subdata[3])
 		{
@@ -3692,7 +3692,7 @@ sub UpdateResetBefore #決算直前の処理(関数名固定)
 	
 		for(my $i=9; $i<$#DT; $i+=10)
 		{
-			TopGetItem($DT[$i],$TOP123[3],"作為特別獎".($i+1)."位の") if defined($DT[$i]);
+			TopGetItem($DT[$i],$TOP123[3],"作為特別獎".($i+1)."名的") if defined($DT[$i]);
 		}
 		
 		sub TopGetItem
