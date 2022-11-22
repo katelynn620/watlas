@@ -569,7 +569,7 @@ msgid "名前"
 msgstr ""
 
 #: watlas/custom/new.cgi:50
-msgid "名前(全角6文字)・店名(全角10文字)・パスワード(8文字)の文字数が多いです。"
+msgid "名前(全角6文字)・店名(全角10文字)・パスワード(12文字)の文字数が多いです。"
 msgstr ""
 
 #: watlas/custom/new.cgi:54
