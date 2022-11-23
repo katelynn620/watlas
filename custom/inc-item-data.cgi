@@ -1562,7 +1562,7 @@
 	type	工藝
 	code	coin
 	name	金幣
-	info	王国発行の金幣。販売して換金
+	info	王國發行的金幣。可以透過販售來取得金錢。
 	price	10000
 	limit	500
 	base	10/20
